@@ -1,0 +1,31 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.Compte;
+
+public class CompteTest {
+
+	@Test
+	public void testVerser() {
+		Compte c = new Compte();
+		c.setSolde(20000);
+		c.verser(1000);
+		Assert.assertEquals("erreur virement", 21000, c.getSolde(), 0);
+	
+
+	}
+
+	
+	@Test
+	public void testRetirer() {
+		Compte c = new Compte();
+		c.setSolde(20000);
+		c.retirer(1000);
+		Assert.assertEquals("erreur retrait", 19000, c.getSolde(), 0);
+	}
+
+}

@@ -1,0 +1,33 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.Compte;
+
+public class CompteTest {
+
+	@Test
+	public void testVerser(float mt) {
+		Compte c = new Compte();
+		c.setCode(451578);
+		c.setSolde(20000);
+		c.verser(1000);
+		Assert.assertEquals("erreur virement", 21000, c.getCode(), 0);
+		System.out.println(c);
+
+	}
+
+	private static int addition(int i, int j) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Test
+	public void testRetirer() {
+		fail("Not yet implemented");
+	}
+
+}

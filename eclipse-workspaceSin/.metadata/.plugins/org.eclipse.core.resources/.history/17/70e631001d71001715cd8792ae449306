@@ -1,0 +1,5 @@
+package com.gtm.TestJUnit.metier;
+
+public class Operation {
+
+}

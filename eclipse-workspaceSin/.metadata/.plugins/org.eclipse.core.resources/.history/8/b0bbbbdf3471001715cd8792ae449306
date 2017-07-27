@@ -1,0 +1,25 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.Compte;
+import com.gtm.comptes.metier.CompteSimple;
+
+public class CompteSimpleTest {
+
+	@Test
+	public void testRetirer() {
+		CompteSimple cs = new CompteSimple(800);
+		cs.setSolde(1000);
+		cs.retirer(1800);
+		Assert.assertEquals("erreur retrait", -800, cs.getSolde(), 0);
+				
+				
+		
+				
+	}
+
+}

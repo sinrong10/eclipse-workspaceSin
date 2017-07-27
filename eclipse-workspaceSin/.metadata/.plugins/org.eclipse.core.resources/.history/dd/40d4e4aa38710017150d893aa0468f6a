@@ -1,0 +1,14 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+public class CompteEpargne {
+
+	@Test
+	public void testCalculinterets() {
+		fail("Not yet implemented");
+	}
+
+}

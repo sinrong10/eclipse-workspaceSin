@@ -1,0 +1,32 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.CompteSimple;
+
+public class CompteEparge {
+
+	@Test
+	public void testCalculinterets() {
+		CompteEparge ce = new CompteEparge();
+		ce.setSolde(1000);
+		ce.testCalculinterets();
+		Assert.assertEquals(1000*1.01, ce.getSolde());
+
+	}
+
+	private void setSolde(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private Object getSolde() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+		
+}

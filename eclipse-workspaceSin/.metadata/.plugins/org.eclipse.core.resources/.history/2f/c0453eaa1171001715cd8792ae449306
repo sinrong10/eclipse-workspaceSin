@@ -1,0 +1,5 @@
+package com.gtm.structure.metier;
+
+public class PDG extends Personne {
+
+}

@@ -1,0 +1,23 @@
+package com.gtm.TestComptes.tests;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.CompteEpargne;
+
+public class CompteEpargneTest {
+
+	public CompteEpargneTest(float taux) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Test
+	public void testCalculinterets() {
+		CompteEpargne ce = new CompteEpargne(0.01f);
+		ce.setSolde(1000);
+		ce.calculinterets();
+		Assert.assertEquals("erreur calcul interet",1010, ce.getSolde(),0);
+
+		}
+}
+	

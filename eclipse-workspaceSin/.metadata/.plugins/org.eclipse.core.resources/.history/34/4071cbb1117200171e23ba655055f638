@@ -1,0 +1,103 @@
+package com.gtm.TestCollection.presentation;
+
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.HashSet;
+import java.util.Hashtable;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List al = new ArrayList();
+		al.add(12);
+		al.add("une chaine de caractère");
+		al.add(12.2f);
+		al.add("d");
+		al.add(12);
+
+		for (int i=0; i<al.size();i++) {
+			System.out.println("la donnée à l'indice"+i+"est"+al.get(i));
+		}
+		System.out.println("--------------------------------------------------");
+		
+		List<String> al2 = new ArrayList<String>();
+		al2.add("des de caractère");
+		al2.add("d");
+		al2.add("d");
+		
+		for (int i=0; i<al2.size(); i++) {
+			System.out.println("la donnée à l'indice"+i+"est"+al2.get(i));
+		}
+
+		System.out.println("--------------------------------------------------");
+		
+		Set s = new HashSet();
+		s.add(24);
+		s.add("caractère");
+		s.add(12.2f);
+		s.add("d");
+		s.add(24);
+		
+		/*Iterator pointe sur la collection s*/
+		
+		Iterator it = s.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+	
+				System.out.println("--------------------------------------------------");
+		
+		Set<Integer> s2 = new HashSet<Integer>();
+		s2.add(24);
+		s2.add(24);
+		s2.add(48);
+		s2.add(36);
+		
+		Iterator it2 = s2.iterator();
+		while(it2.hasNext())
+		{
+			System.out.println(it2.next());
+		}
+		
+		for(int i=0; i<s2.size(); i++) {		
+			System.out.println("la donnée à l'indice"+i+"est"+s2.toArray()[i]);
+		}
+		
+		System.out.println("--------------------------------------------------");
+		
+		Hashtable m = new Hashtable();
+		m.put(1,"printemps");
+		m.put(10,"été");
+		m.put("x","automne");
+		m.put(45,"hiver");
+		
+		Enumeration e = m.elements();
+		
+		while(e.hasMoreElements()) {
+			System.out.println(e.nextElement());
+		}
+		
+		Object t = m.get(1);
+		System.out.println(t);
+		
+		
+		System.out.println("--------------------------------------------------");
+		
+	}
+		
+		
+		
+		
+		
+		
+		
+
+
+}
+

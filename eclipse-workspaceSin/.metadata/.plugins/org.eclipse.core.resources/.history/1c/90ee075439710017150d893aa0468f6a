@@ -1,0 +1,25 @@
+package com.gtm.TestComptes.tests;
+
+import static org.junit.Assert.*;
+
+import org.junit.Assert;
+import org.junit.Test;
+
+import com.gtm.comptes.metier.CompteSimple;
+
+public class CompteEparge {
+
+	public CompteEparge(float taux) {
+		// TODO Auto-generated constructor stub
+	}
+
+	@Test
+	public void testCalculinterets() {
+		CompteEpargneTest ce = new CompteEpargneTest(0.01f);
+		ce.setSolde(1000);
+		ce.testCalculinterets();
+		Assert.assertEquals(1000+1000*1.01, ce.getSolde());
+
+	}
+}
+	

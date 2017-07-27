@@ -1,0 +1,35 @@
+package com.gtm.TestCollection.presentation;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Lanceur {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List al = new ArrayList();
+		al.add(12);
+		al.add("une chaine de caractère");
+		al.add(12.2f);
+		al.add("d");
+		al.add(12);
+
+		for (int i=0; i<al.size();i++) {
+			System.out.println("la donnée à l'indice"+i+"est"+al.get(i));
+		}
+
+		List<String> al2 = new ArrayList<String>();
+		al2.add("une chaine de caractère");
+		al2.add("d");
+		al2.add("d");
+		
+		for (int i=0; i<al2.size(); i++) {
+			System.out.println("la donnée à l'indice"+i+"est"+al.get(i));
+		}
+
+
+
+
+	}
+
+}
